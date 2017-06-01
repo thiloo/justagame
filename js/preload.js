@@ -11,7 +11,11 @@ preload.prototype = {
         game.load.image("wall", "assets/sprites/wall.png");
         game.load.image("ship", "assets/sprites/ship.png");
         game.load.image("smoke", "assets/sprites/smoke.png");
-
+        game.load.image("barrier", "assets/sprites/barrier.png");
+        game.load.image("separator", "assets/sprites/separator.png");
+        game.load.bitmapFont("font", "assets/fonts/font.png", "assets/fonts/font.fnt");
+        game.load.audio("bgmusic", ["assets/sounds/bgmusic.mp3", "assets/sounds/bgmusic.ogg"]);
+        game.load.audio("explosion", ["assets/sounds/explosion.mp3", "assets/sounds/explosion.ogg"]);
 },
 	create: function(){
 		this.game.state.start("TitleScreen");
